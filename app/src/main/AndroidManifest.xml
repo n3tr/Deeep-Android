@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.jkn.deeep" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bar_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.WebAuthActivity"
+            android:label="@string/title_activity_web_auth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ShotDetailActivity"
+            android:label="@string/title_activity_shot_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <meta-data
+        android:name="com.crashlytics.ApiKey"
+        android:value="6277d60e6ef12de8c1daeddb89b0551caf7b73f7" />
+    </application>
+
+</manifest>

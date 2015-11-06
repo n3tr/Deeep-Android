@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/bottom_line_bg">
+    >
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:visibility="invisible"
+        android:id="@+id/layoutLoading"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center">
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+
+            />
+    </LinearLayout>
+    
+   <LinearLayout
+       android:visibility="invisible"
+       android:id="@+id/layoutContent"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:animateLayoutChanges="true">
+
+       <RelativeLayout
+           android:visibility="invisible"
+
+           android:id="@+id/layoutFooter"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="16dp">
+
+           <Button
+               android:textSize="14sp"
+               android:textColor="#ff3D6DC7"
+               android:paddingTop="0dp"
+               android:paddingBottom="0dp"
+               android:paddingRight="12dp"
+               android:paddingLeft="12dp"
+               android:text="View all comments"
+               android:background="@android:color/transparent"
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/button" />
+
+       </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

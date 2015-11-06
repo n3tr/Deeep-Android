@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.jkn.deeep.fragments.PopularFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="@dimen/grid_spacing"
+            android:horizontalSpacing="@dimen/grid_spacing"
+            android:stretchMode="columnWidth"
+            android:numColumns="2"
+            android:padding="@dimen/grid_spacing"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@drawable/grid_image_overlay"
+        />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+
+</FrameLayout>

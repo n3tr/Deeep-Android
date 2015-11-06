@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+
+        <!--Material Color-->
+        <item name="colorPrimary">@color/pinkColor</item>
+        <item name="colorPrimaryDark">@color/pinkDarkColor</item>
+        <item name="android:windowBackground">@color/darkBackgroundColor</item>
+        <item name="windowActionBar">false</item>
+
+
+
+        <!--<item name="colorPrimary">#FF217A</item>-->
+        <!--<item name="colorPrimaryDark">#FFE41E6D</item>-->
+    </style>
+
+</resources>
